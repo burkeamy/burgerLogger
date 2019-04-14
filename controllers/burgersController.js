@@ -17,15 +17,15 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/burgers", function(req, res) {
+  console.log(req.body)
   burger.create([
-    "name", "devoured"
+    "name"
   ], [
-    req.body.name, req.body.devoured
+    req.body.addBurger
   ], function(result) {
     // Send back the ID of the new quote
     res.json({ id: result.insertId });
   });
-  console.log("got here")
 });
 
 router.put("/api/burgers/:id", function(req, res) {

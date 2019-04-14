@@ -1,3 +1,14 @@
 body {
-    background: tan;
+    background-image: url("/images/burger.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.devoured, h1, h2 {
+    background-color: tan;
+}
+
+h1, h2 {
+    width: 30%;
+    padding-left: 5%;
 }
