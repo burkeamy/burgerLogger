@@ -24,19 +24,20 @@ $(document).ready(function (){
 
     $(".devoured").click(function(event, err) {
         const id = $(this).data("id");
-        const hungry = $(this).data("devoured");
+        // const hungry = $(this).data("devoured");
           
-        console.log(hungry)
+        // console.log(hungry)
 
         const hungerState = {
-                full: hungry
+          devoured: true
               };
           
               // Send the PUT request.
               $.ajax("/api/burgers/" + id, {
                 type: "PUT",
-                data: hungerState
+               data: hungerState
               }).then(() => {
+                //console.log(req)
                 console.log("changed  to " + hungerState);
                 // Reload the page to get the updated list
                 location.reload();

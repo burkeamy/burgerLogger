@@ -2,10 +2,11 @@ body {
     background-image: url("/images/burger.jpeg");
     background-repeat: no-repeat;
     background-position: center;
-}
+   }
 
 .devoured, h1, h2 {
     background-color: tan;
+    padding: 1%;
 }
 
 h1, h2 {
