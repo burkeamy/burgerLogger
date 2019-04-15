@@ -4,12 +4,9 @@ body {
     background-position: center;
    }
 
-.devoured, h1, h2 {
+li, h1, h2 {
     background-color: tan;
     padding: 1%;
-}
-
-h1, h2 {
     width: 30%;
     padding-left: 5%;
 }
